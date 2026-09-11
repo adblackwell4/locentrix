@@ -1,13 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Locentrix</title>
-    <style>
-      body { font-family: Arial; text-align:center; margin-top:15%; }
-    </style>
-  </head>
-  <body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Locentrix — Coming Soon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at center, #0a0f1f, #000000);
+        font-family: 'Segoe UI', sans-serif;
+        color: #ffffff;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* Animated stars */
+    .stars {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url('https://i.imgur.com/5u2R9Qp.png');
+        animation: drift 200s linear infinite;
+        opacity: 0.4;
+    }
+
+    @keyframes drift {
+        from { transform: translateY(0); }
+        to { transform: translateY(-2000px); }
+    }
+
+    /* Center container */
+    .container {
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    /* Glowing Locentrix text */
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #00aaff, #66e0ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+        0% { text-shadow: 0 0 10px #00aaff; }
+        50% { text-shadow: 0 0 25px #66e0ff; }
+        100% { text-shadow: 0 0 10px #00aaff; }
+    }
+
+    /* Subtext */
+    p {
+        font-size: 1.3rem;
+        opacity: 0.8;
+        margin-top: -10px;
+    }
+
+    /* Animated orbiting ring */
+    .orbit {
+        width: 180px;
+        height: 180px;
+        border: 2px solid rgba(0, 170, 255, 0.4);
+        border-radius: 50%;
+        margin: 40px auto;
+        position: relative;
+        animation: spin 12s linear infinite;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    /* Orbiting dot */
+    .dot {
+        width: 14px;
+        height: 14px;
+        background: #00aaff;
+        border-radius: 50%;
+        position: absolute;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 10px #00aaff;
+    }
+
+    /* Footer */
+    .footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        font-size: 0.9rem;
+        opacity: 0.5;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+    <div class="orbit">
+        <div class="dot"></div>
+    </div>
+
     <h1>Locentrix</h1>
-    <p>Geospatial Solutions — Coming Soon</p>
-  </body>
+    <p>Geospatial Solutions • Coming Soon</p>
+</div>
+
+<div class="footer">
+    © 2026 Locentrix — All Rights Reserved
+</div>
+
+</body>
 </html>
