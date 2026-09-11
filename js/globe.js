@@ -1,6 +1,4 @@
-const earthTexture = new THREE.TextureLoader().load(
-    "assets/earth.png"
-);
+const earthTexture = new THREE.TextureLoader().load("assets/earth.png");
 
 const globeGeometry = new THREE.SphereGeometry(3, 64, 64);
 const globeMaterial = new THREE.MeshPhongMaterial({
