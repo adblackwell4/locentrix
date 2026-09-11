@@ -12,25 +12,17 @@
         color: white;
         font-family: Arial, sans-serif;
         text-align: center;
+        opacity: 0;
+        animation: fadeIn 2s ease forwards;
+    }
 
-        /* Nebula background */
-        background-image: url("assets/nebula.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
     }
 
     .container {
-        margin-top: 10%;
-        background: rgba(0, 0, 0, 0.5); /* optional subtle dark overlay */
-        display: inline-block;
-        padding: 20px 40px;
-        border-radius: 10px;
-    }
-
-    img {
-        width: 250px;
-        margin-bottom: 30px;
+        margin-top: 12%;
     }
 
     h1 {
@@ -55,7 +47,6 @@
 <body>
 
 <div class="container">
-    <img src="assets/earth.png" alt="Earth">
     <h1>LOCENTRIX</h1>
     <h2>Geospatial Solutions</h2>
     <p>Coming Soon</p>
