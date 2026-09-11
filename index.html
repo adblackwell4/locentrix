@@ -14,7 +14,6 @@
         background: #000814;
     }
 
-    /* Center text container */
     .center-text {
         position: absolute;
         top: 50%;
@@ -63,39 +62,48 @@
     <p>Coming Soon</p>
 </div>
 
-<!-- Three.js CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
 <script>
-    // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({alpha: true});
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    // Globe geometry
     const geometry = new THREE.SphereGeometry(3, 64, 64);
 
-    // Globe texture (high‑res Earth)
+    // CORS-friendly Earth texture
     const textureLoader = new THREE.TextureLoader();
-    const earthTexture = textureLoader.load("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/earth.jpg");
+    const earthTexture = textureLoader.load(
+        "https://raw.githubusercontent.com/itscodenation/earth-day/master/images/earthmap1k.jpg"
+    );
 
-    const material = new THREE.MeshBasicMaterial({ map: earthTexture });
+    const material = new THREE.MeshPhongMaterial({
+        map: earthTexture,
+        shininess: 5
+    });
+
     const globe = new THREE.Mesh(geometry, material);
     scene.add(globe);
 
+    // Lighting so the globe is visible
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(5, 3, 5);
+    scene.add(directionalLight);
+
     camera.position.z = 7;
 
-    // Animation loop
     function animate() {
         requestAnimationFrame(animate);
-        globe.rotation.y += 0.002; // slow rotation
+        globe.rotation.y += 0.002;
         renderer.render(scene, camera);
     }
     animate();
 
-    // Responsive resize
     window.addEventListener('resize', () => {
         camera.aspect = window.innerWidth/window.innerHeight;
         camera.updateProjectionMatrix();
