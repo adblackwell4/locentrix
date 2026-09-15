@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locentrix | Projects</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0F1F;
+            color: #F5F7FA;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #0A0F1F;
+            border-bottom: 1px solid #1E2A47;
+        }
+
+        nav .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: #00C8FF;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #F5F7FA;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #00C8FF;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #0A0F1F 0%, #1E2A47 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            color: #00C8FF;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 60px 40px;
+        }
+
+        .project-card {
+            background-color: #1E2A47;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #2C3A5F;
+            transition: 0.25s;
+        }
+
+        .project-card:hover {
+            border-color: #00C8FF;
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00C8FF;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #4D6FFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">LOCENTRIX</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portal.html">Portal Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Project Portfolio</h1>
+        <p>
+            A showcase of geospatial solutions delivered for utilities, municipalities, environmental organizations,
+            and infrastructure projects.
+        </p>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>Utility Asset Mapping</h3>
+            <p>
+                Comprehensive mapping of electric and water infrastructure, including field data integration and
+                high‑accuracy spatial alignment.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Environmental Risk Analysis</h3>
+            <p>
+                GIS‑driven modeling for flood zones, wildfire risk, and environmental impact assessments using
+                advanced spatial analytics.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Custom GIS Dashboard</h3>
+            <p>
+                Interactive web dashboard built with Leaflet and PostGIS, providing real‑time asset visibility
+                and operational insights.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Data Cleanup & ETL Pipeline</h3>
+            <p>
+                Automated ETL workflows using Python and Supabase to clean, validate, and optimize large geospatial datasets.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Locentrix GIS Consulting — Lexington, SC
+    </div>
+
+</body>
+</html>

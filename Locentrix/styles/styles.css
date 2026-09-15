@@ -1,0 +1,250 @@
+/* ===========================
+   GLOBAL
+   =========================== */
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #0A0F1F;
+    color: #F5F7FA;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #F5F7FA;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================
+   NAVIGATION (Logo Left + Menu Centered)
+   =========================== */
+
+.mega-nav {
+    display: flex;
+    align-items: center;
+    padding: 22px 40px;
+    background-color: #0A0F1F;
+    border-bottom: 1px solid #1E2A47;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #00C8FF;
+    margin-right: auto; /* pushes menu to center */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto; /* centers the menu */
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item > a {
+    padding: 8px 0;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-item > a:hover {
+    color: #00C8FF;
+}
+
+/* ===========================
+   MEGA MENU (Centered Under Each Item)
+   =========================== */
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%); /* centers dropdown under item */
+    background-color: #121A2F;
+    padding: 30px 40px;
+    border-radius: 8px;
+    border: 1px solid #1E2A47;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+    width: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    z-index: 999;
+}
+
+.nav-item:hover .mega-menu {
+    display: grid;
+}
+
+.mega-column h4 {
+    color: #00C8FF;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.mega-column a {
+    display: block;
+    padding: 6px 0;
+    font-size: 0.9rem;
+    color: #F5F7FA;
+    opacity: 0.85;
+    transition: 0.2s;
+}
+
+.mega-column a:hover {
+    opacity: 1;
+    color: #00C8FF;
+}
+
+/* ===========================
+   HERO VIDEO SECTION
+   =========================== */
+
+.hero-video {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 15, 31, 0.6) 0%,
+        rgba(10, 15, 31, 0.9) 100%
+    );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-primary {
+    background-color: #00C8FF;
+    color: #0A0F1F;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.cta-primary:hover {
+    background-color: #4D6FFF;
+}
+
+.cta-secondary {
+    border: 2px solid #00C8FF;
+    color: #00C8FF;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.cta-secondary:hover {
+    border-color: #4D6FFF;
+    color: #4D6FFF;
+}
+
+/* ===========================
+   SECTIONS
+   =========================== */
+
+.wide-section {
+    padding: 100px 60px;
+    border-bottom: 1px solid #1E2A47;
+    text-align: center;
+}
+
+.wide-section p {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    opacity: 0.85;
+}
+
+/* ===========================
+   GRID CARDS
+   =========================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #1E2A47;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #2C3A5F;
+    transition: 0.25s;
+}
+
+.card:hover {
+    border-color: #00C8FF;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9rem;
+    color: #4D6FFF;
+    background-color: #0A0F1F;
+}

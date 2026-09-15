@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locentrix | About Us</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0F1F;
+            color: #F5F7FA;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #0A0F1F;
+            border-bottom: 1px solid #1E2A47;
+        }
+
+        nav .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: #00C8FF;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #F5F7FA;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #00C8FF;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #0A0F1F 0%, #1E2A47 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            color: #00C8FF;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .about-section {
+            padding: 60px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .about-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00C8FF;
+            margin-bottom: 15px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background-color: #1E2A47;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #2C3A5F;
+            transition: 0.25s;
+        }
+
+        .value-card:hover {
+            border-color: #00C8FF;
+            transform: translateY(-5px);
+        }
+
+        .value-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00C8FF;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            margin-top: 60px;
+            border-left: 2px solid #00C8FF;
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .timeline-item h4 {
+            font-family: 'Orbitron', sans-serif;
+            color: #4D6FFF;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #4D6FFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">LOCENTRIX</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portal.html">Portal Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>About Locentrix</h1>
+        <p>
+            Locentrix is a modern GIS consulting studio built on precision, clarity, and advanced geospatial technology.
+            We help organizations make smarter decisions through powerful spatial intelligence.
+        </p>
+    </div>
+
+    <div class="about-section">
+        <h2>Our Mission</h2>
+        <p>
+            We believe better spatial intelligence leads to better decisions. Locentrix exists to deliver high‑accuracy
+            mapping, advanced analysis, and custom geospatial tools that empower utilities, municipalities, and
+            environmental organizations to operate with clarity and confidence.
+        </p>
+
+        <h2>Who We Are</h2>
+        <p>
+            Locentrix was founded in Lexington, South Carolina, by a GIS analyst with deep experience in the utility
+            sector. Our work blends real‑world operational knowledge with cutting‑edge geospatial technology — creating
+            solutions that are both technically strong and practically useful.
+        </p>
+
+        <h2>Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Precision</h3>
+                <p>Every dataset, map, and workflow is crafted with accuracy and attention to detail.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Clarity</h3>
+                <p>We transform complex spatial data into clear, actionable insight.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Innovation</h3>
+                <p>Modern GIS tools, automation, and cloud technology drive everything we build.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Reliability</h3>
+                <p>We deliver solutions that work consistently in real‑world operational environments.</p>
+            </div>
+        </div>
+
+        <h2>Our Story</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>2024 — Foundation</h4>
+                <p>Locentrix begins as a specialized GIS consulting effort focused on utility mapping and analysis.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>2025 — Expansion</h4>
+                <p>Services expand into environmental modeling, custom GIS tools, and data automation workflows.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>2026 — Modernization</h4>
+                <p>Locentrix adopts a tech‑forward identity, integrating cloud GIS, Supabase, PostGIS, and modern web
+                   applications into its service offerings.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Locentrix GIS Consulting — Lexington, SC
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locentrix | Services</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0F1F;
+            color: #F5F7FA;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #0A0F1F;
+            border-bottom: 1px solid #1E2A47;
+        }
+
+        nav .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            color: #00C8FF;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #F5F7FA;
+            font-weight: 400;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #00C8FF;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #0A0F1F 0%, #1E2A47 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            color: #00C8FF;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Services Grid */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 60px 40px;
+        }
+
+        .service-card {
+            background-color: #1E2A47;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #2C3A5F;
+            transition: 0.25s;
+        }
+
+        .service-card:hover {
+            border-color: #00C8FF;
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00C8FF;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #4D6FFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">LOCENTRIX</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portal.html">Portal Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Our Services</h1>
+        <p>
+            Locentrix delivers modern geospatial solutions designed for utilities, infrastructure, environmental projects,
+            and organizations that rely on precise spatial intelligence.
+        </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>Geospatial Consulting</h3>
+            <p>
+                High-accuracy mapping, spatial analysis, and data cleanup for utilities, municipalities, and environmental
+                projects. We transform raw spatial data into clear, actionable insight.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Utility GIS Solutions</h3>
+            <p>
+                Asset mapping, field data workflows, network analysis, and infrastructure visualization tailored for
+                electric, water, and gas utilities. Built for reliability and operational clarity.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Custom GIS Tools</h3>
+            <p>
+                Web-based dashboards, automation scripts, and custom geoprocessing tools built with Python, PostGIS,
+                Leaflet, Mapbox, and modern web frameworks.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Data Management & ETL</h3>
+            <p>
+                Cloud storage, database design, ETL pipelines, and geospatial data optimization using PostGIS, Supabase,
+                and scalable cloud infrastructure.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2026 Locentrix GIS Consulting — Lexington, SC
+    </div>
+
+</body>
+</html>
